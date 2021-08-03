@@ -1,4 +1,5 @@
-import java.util.*;
+package com.task2.enumdemo;
+import java.util.Scanner;
 enum Rainbow{
 	Violet(1),Indigo(2),Blue(3),Green(4),Yellow(5),Orange(6),Red(7);
 	private int value;
@@ -11,7 +12,7 @@ enum Rainbow{
 }
 class EnumDemo{
 	public void method(){
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		try{
 			Rainbow [] rainbow = Rainbow.values();
 			for(Rainbow r : rainbow)
@@ -21,7 +22,7 @@ class EnumDemo{
 			System.out.println(e.getMessage());
 		}
 		finally{
-			sc.close();
+			scanner.close();
 		}
 	}
 	public static void main(String [] args){
